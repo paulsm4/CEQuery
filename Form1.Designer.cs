@@ -60,7 +60,7 @@
             this.edtCeUri.Name = "edtCeUri";
             this.edtCeUri.Size = new System.Drawing.Size(279, 20);
             this.edtCeUri.TabIndex = 1;
-            this.edtCeUri.Text = "http://RGBFileNet451:9080/wsi/FNCEWS40MTOM/";
+            this.edtCeUri.Text = "http://ecmdemo1:9080/wsi/FNCEWS40MTOM/";
             // 
             // edtObjectStore
             // 
@@ -68,7 +68,7 @@
             this.edtObjectStore.Name = "edtObjectStore";
             this.edtObjectStore.Size = new System.Drawing.Size(120, 20);
             this.edtObjectStore.TabIndex = 3;
-            this.edtObjectStore.Text = "OS3";
+            this.edtObjectStore.Text = "ECM";
             // 
             // label2
             // 
@@ -103,7 +103,7 @@
             this.edtPassword.PasswordChar = '*';
             this.edtPassword.Size = new System.Drawing.Size(120, 20);
             this.edtPassword.TabIndex = 7;
-            this.edtPassword.Text = "p8admin";
+            this.edtPassword.Text = "filenet";
             // 
             // label4
             // 

@@ -19,7 +19,8 @@ namespace WindowsFormsApplication1
             "select * from Document",
             "select d.[Name], d.[Id] from Document d where d.[Creator] = 'p8admin'",
             "select Name, Id, MajorVersionNumber, MinorVersionNumber, VersionSeries\n" + 
-            "  from Document where Document.This INFOLDER '/eForms' and IsCurrentVersion=true",
+            // "  from Document where Document.This INFOLDER '/eForms' and IsCurrentVersion=true",
+            "  from Document where Document.This INFOLDER '/GIT/System' and IsCurrentVersion=true",
             // "select Name, Id from Document where Creator='p8admin' and IsClass(Document, StoredSearch)",
             "select Name, Id from Document where IsClass(Document, StoredSearch)",
             "select * from FormPolicy",
@@ -57,6 +58,11 @@ namespace WindowsFormsApplication1
             catch (Exception ex)
             {
                 Log("Error: " + ex.Message);
+                if (ex.InnerException != null)
+                {
+                    ex = ex.InnerException;
+                    Log("Inner Error: " + ex.Message);
+                }
                 Log(ex.StackTrace);
             }
         }

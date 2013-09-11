@@ -1,4 +1,4 @@
-﻿#define P8_451
+﻿// #define P8_451 // Define this in Project, Build, Conditional Compilation Settings
 
 using System;
 using System.Collections;
@@ -6,6 +6,10 @@ using System.Collections;
 using Microsoft.Web.Services3;
 using Microsoft.Web.Services3.Security;
 using Microsoft.Web.Services3.Security.Tokens;
+#elif P8_511
+using FileNet.Api.Authentication;
+#else
+#error Must define one of P8_451 or P8_511
 #endif
 using FileNet.Api.Action;
 using FileNet.Api.Admin;
